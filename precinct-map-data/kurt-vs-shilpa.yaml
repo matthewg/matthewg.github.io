@@ -1,0 +1,10 @@
+join_keys:
+  geo_join_key: "NAME"
+  csv_join_key: "Precinct"
+display:
+  title: "Shilpa Vote Pct v. Kurt Vote Pct"
+  type: numeric_open
+  value_column: "ShilpaPct - KurtPct"
+  numeric_colors:
+    min_color: "#ff0000"
+    max_color: "#00ff00"
