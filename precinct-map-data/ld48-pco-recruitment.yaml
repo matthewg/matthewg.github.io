@@ -1,0 +1,21 @@
+join_keys:
+  geo_join_key: "NAME"
+  csv_join_key: "Precinct (per adjusted boundaries)"
+display:
+  title: "LD48 PCO Recruitment Status"
+  type: enum
+  value_column: "Have committed candidate? 13/163"
+  drop_unmatched_geo: true
+  enum_mappings:
+    "Yes":
+      color: "#2ca25f"
+      description: "Confirmed candidate"
+    "No":
+      color: "#e34a33"
+      description: "No candidate"
+    "TBD":
+      color: "#fcec6fff"
+      description: "Not sure if incumbent PCO will be continuing"
+  tooltips:
+    - "NAME"
+    - "description"
