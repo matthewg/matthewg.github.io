@@ -4,7 +4,7 @@ join_keys:
 display:
   title: "LD48 PCO Recruitment Status"
   type: enum
-  value_column: "Have committed candidate? 13/163"
+  value_column: "Have committed candidate? 49/163"
   drop_unmatched_geo: true
   enum_mappings:
     "Yes":
