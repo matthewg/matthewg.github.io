@@ -1,0 +1,26 @@
+join_keys:
+  geo_join_key: "NAME"
+  csv_join_key: "Precinct"
+display:
+  title: "LD48 PCO Filing Status"
+  type: enum
+  value_column: "Status"
+  drop_unmatched_geo: true
+  enum_mappings:
+    "Pledged & Filed":
+      color: "#2ca25f"
+      description: "Pledged candidate filed"
+    "Pledged & !Filed":
+      color: "#e34a33"
+      description: "Pledged candidate hasn't filed"
+    "Pledged != Filed":
+      color: "#fcec6fff"
+      description: "Filed candidate is different from pledged candidate"
+    "!Pledged & !Filed":
+      color: "#808080"
+      description: "No pledged candidate, nobody's filed"
+  tooltips:
+    - "NAME"
+    - "Pledged"
+    - "Filed"
+    - "Notes"
